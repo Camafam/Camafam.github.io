@@ -11,6 +11,7 @@ var stone = 0;
 function stoneClick(number) {
   stone = stone + number;
   document.getElementById("stone").innerHTML = stone;
+  document.getElementById("stonePS").innerHTML = stoneMine + stoneBot;
   document.getElementById("stoneRibbon").innerHTML = stone;
   document.getElementById("woodRibbon").innerHTML = wood;
   document.getElementById("ironRibbon").innerHTML = iron;
@@ -80,6 +81,7 @@ var wood = 0;
 function woodClick(number) {
   wood = wood + number;
   document.getElementById("wood").innerHTML = wood;
+  document.getElementById("woodPS").innerHTML = woodMine + woodBot;
   document.getElementById("stoneRibbon").innerHTML = stone;
   document.getElementById("woodRibbon").innerHTML = wood;
   document.getElementById("ironRibbon").innerHTML = iron;
@@ -152,7 +154,12 @@ var iron = 0;
 function ironClick(number) {
   iron = iron + number;
   document.getElementById("iron").innerHTML = iron;
+  document.getElementById("ironPS").innerHTML = ironMine + ironBot;
+  document.getElementById("stoneRibbon").innerHTML = stone;
+  document.getElementById("woodRibbon").innerHTML = wood;
   document.getElementById("ironRibbon").innerHTML = iron;
+  document.getElementById("copperRibbon").innerHTML = copper;
+  document.getElementById("oilRibbon").innerHTML = oil;
 };
 
 var ironMine = 0;
@@ -217,7 +224,12 @@ var copper = 0;
 function copperClick(number) {
   copper = copper + number;
   document.getElementById("copper").innerHTML = copper;
+  document.getElementById("copperPS").innerHTML = copperMine + copperBot;
+  document.getElementById("stoneRibbon").innerHTML = stone;
+  document.getElementById("woodRibbon").innerHTML = wood;
+  document.getElementById("ironRibbon").innerHTML = iron;
   document.getElementById("copperRibbon").innerHTML = copper;
+  document.getElementById("oilRibbon").innerHTML = oil;
 };
 
 var copperMine = 0;
@@ -282,6 +294,11 @@ var oil = 0;
 function oilClick(number) {
   oil = oil + number;
   document.getElementById("oil").innerHTML = oil;
+  document.getElementById("oilPS").innerHTML = oilMine + oilBot;
+  document.getElementById("stoneRibbon").innerHTML = stone;
+  document.getElementById("woodRibbon").innerHTML = wood;
+  document.getElementById("ironRibbon").innerHTML = iron;
+  document.getElementById("copperRibbon").innerHTML = copper;
   document.getElementById("oilRibbon").innerHTML = oil;
 };
 
