@@ -1,7 +1,7 @@
-var stone = 10000;
+var stone = 0;
 stoneMine = 0;
 stoneBot = 0;
-wood = 10000;
+wood = 0;
 woodMine = 0;
 woodBot = 0;
 iron = 0;
