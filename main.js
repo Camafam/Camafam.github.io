@@ -13,6 +13,18 @@ copperBot = 0;
 oil = 0;
 oilMine = 0;
 oilBot = 0;
+electricity = 0;
+plastic = 0;
+sulfuricAcid = 0;
+gears  = 0;
+wire = 0;
+copperSheet = 0;
+ironPlate = 0;
+cpu = 0;
+battery = 0;
+robot = 0;
+
+
 window.onload = function() {
 	document.getElementById("stoneRibbon").innerHTML = stone;
 	document.getElementById("woodRibbon").innerHTML = wood;
