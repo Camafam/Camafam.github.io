@@ -1,7 +1,7 @@
-var stone = 0;
+var stone = 10000;
 stoneMine = 0;
 stoneBot = 0;
-wood = 0;
+wood = 10000;
 woodMine = 0;
 woodBot = 0;
 iron = 0;
@@ -24,7 +24,7 @@ window.onload = function() {
 function stoneClick(number) {
 	stone = stone + number;
 	document.getElementById("stone").innerHTML = stone;
-	document.getElementById("stonePS").innerHTML = stoneMine + stoneBot;
+	document.getElementById("stonePS").innerHTML = stoneBot*(1+stoneMine*10);
 	document.getElementById("stoneRibbon").innerHTML = stone;
 	document.getElementById("woodRibbon").innerHTML = wood;
 	document.getElementById("ironRibbon").innerHTML = iron;
@@ -33,7 +33,7 @@ function stoneClick(number) {
 };
 
 function buyStoneMine() {
-	var stoneMineCost = Math.floor(10 * Math.pow(1.1, stoneMine)); //works out the cost of this cursor
+	var stoneMineCost = Math.floor(1000 * Math.pow(1.1, stoneMine)); //works out the cost of this cursor
 	if (stone >= stoneMineCost && wood >= stoneMineCost) { //checks that the player can afford the cursor
 		stoneMine = stoneMine + 1; //increases number of cursors
 		stone = stone - stoneMineCost; //removes the cookies spent
@@ -46,7 +46,7 @@ function buyStoneMine() {
 		document.getElementById("copperRibbon").innerHTML = copper;
 		document.getElementById("oilRibbon").innerHTML = oil;
 	};
-	var nextCost = Math.floor(10 * Math.pow(1.1, stoneMine)); //works out the cost of the next cursor
+	var nextCost = Math.floor(1000 * Math.pow(1.1, stoneMine)); //works out the cost of the next cursor
 	document.getElementById('stoneMineCost1').innerHTML = nextCost; //updates the cursor cost for the user
 	document.getElementById('stoneMineCost2').innerHTML = nextCost; //updates the cursor cost for the user
 };
@@ -75,7 +75,7 @@ function buyStoneBot() {
 function woodClick(number) {
 	wood = wood + number;
 	document.getElementById("wood").innerHTML = wood;
-	document.getElementById("woodPS").innerHTML = woodMine + woodBot;
+	document.getElementById("woodPS").innerHTML = woodBot*(1+woodMine*10);
 	document.getElementById("stoneRibbon").innerHTML = stone;
 	document.getElementById("woodRibbon").innerHTML = wood;
 	document.getElementById("ironRibbon").innerHTML = iron;
@@ -84,7 +84,7 @@ function woodClick(number) {
 };
 
 function buyWoodMine() {
-	var woodMineCost = Math.floor(10 * Math.pow(1.1, woodMine)); //works out the cost of this cursor
+	var woodMineCost = Math.floor(1000 * Math.pow(1.1, woodMine)); //works out the cost of this cursor
 	if (stone >= woodMineCost && wood >= woodMineCost) { //checks that the player can afford the cursor
 		woodMine = woodMine + 1; //increases number of cursors
 		stone = stone - woodMineCost; //removes the cookies spent
@@ -97,7 +97,7 @@ function buyWoodMine() {
 		document.getElementById("copperRibbon").innerHTML = copper;
 		document.getElementById("oilRibbon").innerHTML = oil;
 	};
-	var nextCost = Math.floor(10 * Math.pow(1.1, woodMine)); //works out the cost of the next cursor
+	var nextCost = Math.floor(1000 * Math.pow(1.1, woodMine)); //works out the cost of the next cursor
 	document.getElementById('woodMineCost1').innerHTML = nextCost; //updates the cursor cost for the user
 	document.getElementById('woodMineCost2').innerHTML = nextCost; //updates the cursor cost for the user
 };
@@ -126,7 +126,7 @@ function buyWoodBot() {
 function ironClick(number) {
 	iron = iron + number;
 	document.getElementById("iron").innerHTML = iron;
-	document.getElementById("ironPS").innerHTML = ironMine + ironBot;
+	document.getElementById("ironPS").innerHTML = ironBot*(1+ironMine*10);
 	document.getElementById("stoneRibbon").innerHTML = stone;
 	document.getElementById("woodRibbon").innerHTML = wood;
 	document.getElementById("ironRibbon").innerHTML = iron;
@@ -135,7 +135,7 @@ function ironClick(number) {
 };
 
 function buyIronMine() {
-	var ironMineCost = Math.floor(10 * Math.pow(1.1, ironMine)); //works out the cost of this cursor
+	var ironMineCost = Math.floor(1000 * Math.pow(1.1, ironMine)); //works out the cost of this cursor
 	if (stone >= ironMineCost && wood >= ironMineCost) { //checks that the player can afford the cursor
 		ironMine = ironMine + 1; //increases number of cursors
 		stone = stone - ironMineCost; //removes the cookies spent
@@ -148,7 +148,7 @@ function buyIronMine() {
 		document.getElementById("copperRibbon").innerHTML = copper;
 		document.getElementById("oilRibbon").innerHTML = oil;
 	};
-	var nextCost = Math.floor(10 * Math.pow(1.1, ironMine)); //works out the cost of the next cursor
+	var nextCost = Math.floor(1000 * Math.pow(1.1, ironMine)); //works out the cost of the next cursor
 	document.getElementById('ironMineCost1').innerHTML = nextCost; //updates the cursor cost for the user
 	document.getElementById('ironMineCost2').innerHTML = nextCost; //updates the cursor cost for the user
 };
@@ -177,7 +177,7 @@ function buyIronBot() {
 function copperClick(number) {
 	copper = copper + number;
 	document.getElementById("copper").innerHTML = copper;
-	document.getElementById("copperPS").innerHTML = copperMine + copperBot;
+	document.getElementById("copperPS").innerHTML = copperBot*(1+copperMine*10);
 	document.getElementById("stoneRibbon").innerHTML = stone;
 	document.getElementById("woodRibbon").innerHTML = wood;
 	document.getElementById("ironRibbon").innerHTML = iron;
@@ -186,7 +186,7 @@ function copperClick(number) {
 };
 
 function buyCopperMine() {
-	var copperMineCost = Math.floor(10 * Math.pow(1.1, copperMine)); //works out the cost of this cursor
+	var copperMineCost = Math.floor(1000 * Math.pow(1.1, copperMine)); //works out the cost of this cursor
 	if (stone >= copperMineCost && wood >= copperMineCost) { //checks that the player can afford the cursor
 		copperMine = copperMine + 1; //increases number of cursors
 		stone = stone - copperMineCost; //removes the cookies spent
@@ -199,7 +199,7 @@ function buyCopperMine() {
 		document.getElementById("copperRibbon").innerHTML = copper;
 		document.getElementById("oilRibbon").innerHTML = oil;
 	};
-	var nextCost = Math.floor(10 * Math.pow(1.1, copperMine)); //works out the cost of the next cursor
+	var nextCost = Math.floor(1000 * Math.pow(1.1, copperMine)); //works out the cost of the next cursor
 	document.getElementById('copperMineCost1').innerHTML = nextCost; //updates the cursor cost for the user
 	document.getElementById('copperMineCost2').innerHTML = nextCost; //updates the cursor cost for the user
 };
@@ -228,7 +228,7 @@ function buyCopperBot() {
 function oilClick(number) {
 	oil = oil + number;
 	document.getElementById("oil").innerHTML = oil;
-	document.getElementById("oilPS").innerHTML = oilMine + oilBot;
+	document.getElementById("oilPS").innerHTML = oilBot*(1+oilMine*10);
 	document.getElementById("stoneRibbon").innerHTML = stone;
 	document.getElementById("woodRibbon").innerHTML = wood;
 	document.getElementById("ironRibbon").innerHTML = iron;
@@ -237,7 +237,7 @@ function oilClick(number) {
 };
 
 function buyOilMine() {
-	var oilMineCost = Math.floor(10 * Math.pow(1.1, oilMine)); //works out the cost of this cursor
+	var oilMineCost = Math.floor(1000 * Math.pow(1.1, oilMine)); //works out the cost of this cursor
 	if (stone >= oilMineCost && wood >= oilMineCost) { //checks that the player can afford the cursor
 		oilMine = oilMine + 1; //increases number of cursors
 		stone = stone - oilMineCost; //removes the cookies spent
@@ -250,7 +250,7 @@ function buyOilMine() {
 		document.getElementById("copperRibbon").innerHTML = copper;
 		document.getElementById("oilRibbon").innerHTML = oil;
 	};
-	var nextCost = Math.floor(10 * Math.pow(1.1, oilMine)); //works out the cost of the next cursor
+	var nextCost = Math.floor(1000 * Math.pow(1.1, oilMine)); //works out the cost of the next cursor
 	document.getElementById('oilMineCost1').innerHTML = nextCost; //updates the cursor cost for the user
 	document.getElementById('oilMineCost2').innerHTML = nextCost; //updates the cursor cost for the user
 };
@@ -276,14 +276,9 @@ function buyOilBot() {
 	document.getElementById('oilBotCost3').innerHTML = nextCost;
 };
 window.setInterval(function() {
-	stoneClick(stoneMine);
-	stoneClick(stoneBot);
-	woodClick(woodMine);
-	woodClick(woodBot);
-	ironClick(ironMine);
-	ironClick(ironBot);
-	copperClick(copperMine);
-	copperClick(copperBot);
-	oilClick(oilMine);
-	oilClick(oilBot);
+	stoneClick(stoneBot*(1+stoneMine*10));
+	woodClick(woodBot*(1+woodMine*10));
+	ironClick(ironBot*(1+ironMine*10));
+	copperClick(copperBot*(1+copperMine*10));
+	oilClick(oilBot*(1+oilMine*10));
 }, 1000);
