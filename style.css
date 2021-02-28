@@ -10,7 +10,7 @@ body {
 	padding: 10px 32px;
 }
 button {
-	height: 30px;
+	height: 25px;
 	background-color: #fff;
 	border-radius: 3px;
 	border: 1px solid #c4c4c4;
@@ -110,8 +110,20 @@ button.MenuButtons {
 .stone1c {
 	grid-column-start: 1;
 	grid-column-end: 2;
+	grid-row-start: 5;
+	grid-row-end: 6;
+}
+.stone1StoneBotCost {
+	grid-column-start: 1;
+	grid-column-end: 3;
 	grid-row-start: 4;
 	grid-row-end: 5;
+}
+.stone1StoneMineCost {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 6;
+	grid-row-end: 7;
 }
 .stone1WorkButton {
 	grid-column-start: 1;
@@ -191,8 +203,8 @@ button.MenuButtons {
 .wood1c {
 	grid-column-start: 1;
 	grid-column-end: 2;
-	grid-row-start: 4;
-	grid-row-end: 5;
+	grid-row-start: 5;
+	grid-row-end: 6;
 }
 .wood1WorkButton {
 	grid-column-start: 1;
@@ -219,6 +231,18 @@ button.MenuButtons {
 	/* Adjust with JavaScript */
 	height: 20px;
 	border-radius: 3px;
+}
+.wood1WoodBotCost {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+.wood1WoodMineCost {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 6;
+	grid-row-end: 7;
 }
 .iron1 {
 	outline-style: solid;
@@ -272,8 +296,8 @@ button.MenuButtons {
 .iron1c {
 	grid-column-start: 1;
 	grid-column-end: 2;
-	grid-row-start: 4;
-	grid-row-end: 5;
+	grid-row-start: 5;
+	grid-row-end: 6;
 }
 .iron1WorkButton {
 	grid-column-start: 1;
@@ -300,6 +324,18 @@ button.MenuButtons {
 	/* Adjust with JavaScript */
 	height: 20px;
 	border-radius: 3px;
+}
+.iron1IronBotCost {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+.iron1IronMineCost {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 6;
+	grid-row-end: 7;
 }
 .copper1 {
 	outline-style: solid;
@@ -353,8 +389,8 @@ button.MenuButtons {
 .copper1c {
 	grid-column-start: 1;
 	grid-column-end: 2;
-	grid-row-start: 4;
-	grid-row-end: 5;
+	grid-row-start: 5;
+	grid-row-end: 6;
 }
 .copper1WorkButton {
 	grid-column-start: 1;
@@ -381,6 +417,18 @@ button.MenuButtons {
 	/* Adjust with JavaScript */
 	height: 20px;
 	border-radius: 3px;
+}
+.copper1CopperBotCost {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+.copper1CopperMineCost {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 6;
+	grid-row-end: 7;
 }
 .oil1 {
 	outline-style: solid;
@@ -434,8 +482,8 @@ button.MenuButtons {
 .oil1c {
 	grid-column-start: 1;
 	grid-column-end: 2;
-	grid-row-start: 4;
-	grid-row-end: 5;
+	grid-row-start: 5;
+	grid-row-end: 6;
 }
 .oil1WorkButton {
 	grid-column-start: 1;
@@ -462,6 +510,18 @@ button.MenuButtons {
 	/* Adjust with JavaScript */
 	height: 20px;
 	border-radius: 3px;
+}
+.oil1OilBotCost {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+.oil1OilMineCost {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 6;
+	grid-row-end: 7;
 }
 .workshop1 {
 	outline-style: solid;

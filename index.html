@@ -6,11 +6,7 @@
 </head>
 <body>
 	<div class="ribbon">
-		<pre></pre>Stone: <span id="stoneRibbon">0</span>
-		Wood: <span id="woodRibbon">0</span>
-		Iron: <span id="ironRibbon">0</span>
-		Copper: <span id="copperRibbon">0</span>
-		Oil: <span id="oilRibbon">0</span>
+		<pre></pre>Stone: <span id="stoneRibbon">0</span> Wood: <span id="woodRibbon">0</span> Iron: <span id="ironRibbon">0</span> Copper: <span id="copperRibbon">0</span> Oil: <span id="oilRibbon">0</span>
 	</div>
 	<div class="rightRibbon">
 		<pre></pre>Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here Text here text here text here text here
@@ -30,16 +26,22 @@
 			<div></div>
 		</div>
 		<div class="stone1b">
-			<button onclick="buyStoneBot(1)" title="Recipe: 1 x cpu 2 x plate 4 x gears 2 x wire">Assign bots</button>
+			<button onclick="buyStoneBot(1)">Assign bots</button>
 		</div>
 		<div class="stone1BotsWorking">
 			Bots working: <span id="stoneBot">0</span>
 		</div>
+		<div class="stone1StoneBotCost">
+			Bot Cost - Iron: <span id="stoneBotCost1">10</span> copper: <span id="stoneBotCost2">10</span> oil: <span id="stoneBotCost3">10</span>
+		</div>
 		<div class="stone1c">
-			<button onclick="buyStoneMine(1)" title="Recipe: 10x Wood 10x stone">Buy Quarry</button>
+			<button onclick="buyStoneMine(1)">Buy Quarry</button>
 		</div>
 		<div class="stone1QuarryNumber">
 			Quarries: <span id="stoneMine">0</span>
+		</div>
+		<div class="stone1StoneMineCost">
+			Quarry cost - Stone: <span id="stoneMineCost1">10</span> Wood: <span id="stoneMineCost2">10</span>
 		</div>
 	</div>
 	<div class="wood1">
@@ -57,16 +59,22 @@
 			<div></div>
 		</div>
 		<div class="wood1b">
-			<button onclick="buyWoodBot(1)" title="Recipe: 1 x cpu 2 x plate 4 x gears 2 x wire">Assign bots</button>
+			<button onclick="buyWoodBot(1)">Assign bots</button>
 		</div>
 		<div class="wood1BotsWorking">
 			Bots working: <span id="woodBot">0</span>
 		</div>
+		<div class="wood1WoodBotCost">
+			Bot Cost - Iron: <span id="woodBotCost1">10</span> copper: <span id="woodBotCost2">10</span> oil: <span id="woodBotCost3">10</span>
+		</div>
 		<div class="wood1c">
-			<button onclick="buyWoodMine(1)" title="Recipe: 10x Wood 10x stone">Buy Lumbermill</button>
+			<button onclick="buyWoodMine(1)">Buy Lumbermill</button>
 		</div>
 		<div class="wood1LumbermillNumber">
 			Lumbermills: <span id="woodMine">0</span>
+		</div>
+		<div class="wood1WoodMineCost">
+			Lumbermill cost - Stone: <span id="woodMineCost1">10</span> Wood: <span id="woodMineCost2">10</span>
 		</div>
 	</div>
 	<div class="iron1">
@@ -84,16 +92,22 @@
 			<div></div>
 		</div>
 		<div class="iron1b">
-			<button onclick="buyIronBot(1)" title="Recipe: 1 x cpu 2 x plate 4 x gears 2 x wire">Assign bots</button>
+			<button onclick="buyIronBot(1)">Assign bots</button>
 		</div>
 		<div class="iron1BotsWorking">
 			Bots working: <span id="ironBot">0</span>
 		</div>
+		<div class="iron1IronBotCost">
+			Bot Cost - Iron: <span id="ironBotCost1">10</span> copper: <span id="ironBotCost2">10</span> oil: <span id="ironBotCost3">10</span>
+		</div>
 		<div class="iron1c">
-			<button onclick="buyIronMine(1)" title="Recipe: 10x Wood 10x stone">Buy Iron Mine</button>
+			<button onclick="buyIronMine(1)">Buy Iron Mine</button>
 		</div>
 		<div class="iron1IronMineNumber">
 			Iron Mines: <span id="ironMine">0</span>
+		</div>
+		<div class="iron1IronMineCost">
+			Iron mine cost - Stone: <span id="ironMineCost1">10</span> Wood: <span id="ironMineCost2">10</span>
 		</div>
 	</div>
 	<div class="copper1">
@@ -111,16 +125,22 @@
 			<div></div>
 		</div>
 		<div class="copper1b">
-			<button onclick="buyCopperBot(1)" title="Recipe: 1 x cpu 2 x plate 4 x gears 2 x wire">Assign bots</button>
+			<button onclick="buyCopperBot(1)">Assign bots</button>
 		</div>
 		<div class="copper1BotsWorking">
 			Bots working: <span id="copperBot">0</span>
 		</div>
-		<div class="copper1c">
-			<button onclick="buyCopperMine(1)" title="Recipe: 10x Wood 10x stone">Buy copper Mine</button>
+		<div class="copper1CopperBotCost">
+			Bot Cost - Iron: <span id="copperBotCost1">10</span> copper: <span id="copperBotCost2">10</span> oil: <span id="copperBotCost3">10</span>
 		</div>
-		<div class="copper1copperMineNumber">
+		<div class="copper1c">
+			<button onclick="buyCopperMine(1)">Buy copper Mine</button>
+		</div>
+		<div class="copper1CopperMineNumber">
 			copper Mines: <span id="copperMine">0</span>
+		</div>
+		<div class="copper1CopperMineCost">
+			Copper mine cost - Stone: <span id="copperMineCost1">10</span> Wood: <span id="copperMineCost2">10</span>
 		</div>
 	</div>
 	<div class="oil1">
@@ -138,16 +158,22 @@
 			<div></div>
 		</div>
 		<div class="oil1b">
-			<button onclick="buyOilBot(1)" title="Recipe: 1 x cpu 2 x plate 4 x gears 2 x wire">Assign bots</button>
+			<button onclick="buyOilBot(1)">Assign bots</button>
 		</div>
 		<div class="oil1BotsWorking">
 			Bots working: <span id="oilBot">0</span>
 		</div>
+		<div class="oil1OilBotCost">
+			Bot Cost - Iron: <span id="oilBotCost1">10</span> copper: <span id="oilBotCost2">10</span> oil: <span id="oilBotCost3">10</span>
+		</div>
 		<div class="oil1c">
-			<button onclick="buyOilMine(1)" title="Recipe: 10x Wood 10x stone">Buy oil Well</button>
+			<button onclick="buyOilMine(1)">Buy oil Well</button>
 		</div>
 		<div class="oil1OilWellNumber">
 			Oil Wells: <span id="oilMine">0</span>
+		</div>
+		<div class="oil1OilMineCost">
+			Oil well cost - Stone: <span id="oilMineCost1">10</span> Wood: <span id="oilMineCost2">10</span>
 		</div>
 	</div>
 	<div class="workshop1">

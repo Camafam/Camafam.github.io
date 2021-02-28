@@ -47,8 +47,8 @@ function buyStoneMine() {
 		document.getElementById("oilRibbon").innerHTML = oil;
 	};
 	var nextCost = Math.floor(10 * Math.pow(1.1, stoneMine)); //works out the cost of the next cursor
-	document.getElementById('stoneMineCost').innerHTML = nextCost; //updates the cursor cost for the user
 	document.getElementById('stoneMineCost1').innerHTML = nextCost; //updates the cursor cost for the user
+	document.getElementById('stoneMineCost2').innerHTML = nextCost; //updates the cursor cost for the user
 };
 
 function buyStoneBot() {
@@ -67,8 +67,9 @@ function buyStoneBot() {
 		document.getElementById("oilRibbon").innerHTML = oil;
 	};
 	var nextCost = Math.floor(10 * Math.pow(1.1, stoneBot)); //works out the cost of the next cursor
-	document.getElementById('stoneBotCost').innerHTML = nextCost; //updates the cursor cost for the user
 	document.getElementById('stoneBotCost1').innerHTML = nextCost; //updates the cursor cost for the user
+	document.getElementById('stoneBotCost2').innerHTML = nextCost; //updates the cursor cost for the user
+	document.getElementById('stoneBotCost3').innerHTML = nextCost;
 };
 
 function woodClick(number) {
@@ -97,8 +98,8 @@ function buyWoodMine() {
 		document.getElementById("oilRibbon").innerHTML = oil;
 	};
 	var nextCost = Math.floor(10 * Math.pow(1.1, woodMine)); //works out the cost of the next cursor
-	document.getElementById('woodMineCost').innerHTML = nextCost; //updates the cursor cost for the user
 	document.getElementById('woodMineCost1').innerHTML = nextCost; //updates the cursor cost for the user
+	document.getElementById('woodMineCost2').innerHTML = nextCost; //updates the cursor cost for the user
 };
 
 function buyWoodBot() {
@@ -117,8 +118,9 @@ function buyWoodBot() {
 		document.getElementById("oilRibbon").innerHTML = oil;
 	};
 	var nextCost = Math.floor(10 * Math.pow(1.1, woodBot)); //works out the cost of the next cursor
-	document.getElementById('woodBotCost').innerHTML = nextCost; //updates the cursor cost for the user
 	document.getElementById('woodBotCost1').innerHTML = nextCost; //updates the cursor cost for the user
+	document.getElementById('woodBotCost2').innerHTML = nextCost; //updates the cursor cost for the user
+	document.getElementById('woodBotCost3').innerHTML = nextCost;
 };
 
 function ironClick(number) {
@@ -147,8 +149,8 @@ function buyIronMine() {
 		document.getElementById("oilRibbon").innerHTML = oil;
 	};
 	var nextCost = Math.floor(10 * Math.pow(1.1, ironMine)); //works out the cost of the next cursor
-	document.getElementById('ironMineCost').innerHTML = nextCost; //updates the cursor cost for the user
 	document.getElementById('ironMineCost1').innerHTML = nextCost; //updates the cursor cost for the user
+	document.getElementById('ironMineCost2').innerHTML = nextCost; //updates the cursor cost for the user
 };
 
 function buyIronBot() {
@@ -167,8 +169,9 @@ function buyIronBot() {
 		document.getElementById("oilRibbon").innerHTML = oil;
 	};
 	var nextCost = Math.floor(10 * Math.pow(1.1, ironBot)); //works out the cost of the next cursor
-	document.getElementById('ironBotCost').innerHTML = nextCost; //updates the cursor cost for the user
 	document.getElementById('ironBotCost1').innerHTML = nextCost; //updates the cursor cost for the user
+	document.getElementById('ironBotCost2').innerHTML = nextCost; //updates the cursor cost for the user
+	document.getElementById('ironBotCost3').innerHTML = nextCost
 };
 
 function copperClick(number) {
@@ -197,8 +200,8 @@ function buyCopperMine() {
 		document.getElementById("oilRibbon").innerHTML = oil;
 	};
 	var nextCost = Math.floor(10 * Math.pow(1.1, copperMine)); //works out the cost of the next cursor
-	document.getElementById('copperMineCost').innerHTML = nextCost; //updates the cursor cost for the user
 	document.getElementById('copperMineCost1').innerHTML = nextCost; //updates the cursor cost for the user
+	document.getElementById('copperMineCost2').innerHTML = nextCost; //updates the cursor cost for the user
 };
 
 function buyCopperBot() {
@@ -217,8 +220,9 @@ function buyCopperBot() {
 		document.getElementById("oilRibbon").innerHTML = oil;
 	};
 	var nextCost = Math.floor(10 * Math.pow(1.1, copperBot)); //works out the cost of the next cursor
-	document.getElementById('copperBotCost').innerHTML = nextCost; //updates the cursor cost for the user
 	document.getElementById('copperBotCost1').innerHTML = nextCost; //updates the cursor cost for the user
+	document.getElementById('copperBotCost2').innerHTML = nextCost; //updates the cursor cost for the user
+	document.getElementById('copperBotCost3').innerHTML = nextCost;
 };
 
 function oilClick(number) {
@@ -247,8 +251,8 @@ function buyOilMine() {
 		document.getElementById("oilRibbon").innerHTML = oil;
 	};
 	var nextCost = Math.floor(10 * Math.pow(1.1, oilMine)); //works out the cost of the next cursor
-	document.getElementById('oilMineCost').innerHTML = nextCost; //updates the cursor cost for the user
 	document.getElementById('oilMineCost1').innerHTML = nextCost; //updates the cursor cost for the user
+	document.getElementById('oilMineCost2').innerHTML = nextCost; //updates the cursor cost for the user
 };
 
 function buyOilBot() {
@@ -267,8 +271,9 @@ function buyOilBot() {
 		document.getElementById("oilRibbon").innerHTML = oil;
 	};
 	var nextCost = Math.floor(10 * Math.pow(1.1, oilBot)); //works out the cost of the next cursor
-	document.getElementById('oilBotCost').innerHTML = nextCost; //updates the cursor cost for the user
 	document.getElementById('oilBotCost1').innerHTML = nextCost; //updates the cursor cost for the user
+	document.getElementById('oilBotCost2').innerHTML = nextCost; //updates the cursor cost for the user
+	document.getElementById('oilBotCost3').innerHTML = nextCost;
 };
 window.setInterval(function() {
 	stoneClick(stoneMine);
