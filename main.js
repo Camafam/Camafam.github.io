@@ -13,16 +13,39 @@ copperBot = 0;
 oil = 0;
 oilMine = 0;
 oilBot = 0;
+charcoal = 0;
+charcoalMine = 0;
+charcoalBot = 0;
 electricity = 0;
+electricityMine = 0;
+electricityBot = 0;
 plastic = 0;
+plasticMine = 0;
+plasticBot = 0;
 sulfuricAcid = 0;
+sulfuricAcidMine = 0;
+sulfuricAcidBot = 0;
 gears  = 0;
+gearsMine = 0;
+gearsBot = 0;
 wire = 0;
+wireMine = 0;
+wireBot = 0;
 copperSheet = 0;
+copperSheetMine = 0;
+copperSheetBot = 0;
 ironPlate = 0;
+ironPlateMine = 0;
+ironPlateBot = 0;
 cpu = 0;
+cpuMine = 0;
+cpuBot = 0;
 battery = 0;
+batteryMine = 0;
+batteryBot = 0;
 robot = 0;
+robotMine = 0;
+robotBot = 0;
 
 
 window.onload = function() {
@@ -33,6 +56,42 @@ window.onload = function() {
 	document.getElementById("oilRibbon").innerHTML = oil;
 };
 
+function save() {
+	localStorage.setItem('stone', JSON.stringify(stone));
+	localStorage.setItem('stoneMine', JSON.stringify(stoneMine));
+	localStorage.setItem('stoneBot', JSON.stringify(stoneBot));
+	localStorage.setItem('wood', JSON.stringify(wood));
+	localStorage.setItem('woodMine', JSON.stringify(woodMine));
+	localStorage.setItem('woodBot', JSON.stringify(woodBot));
+	localStorage.setItem('iron', JSON.stringify(iron));
+	localStorage.setItem('ironMine', JSON.stringify(ironMine));
+	localStorage.setItem('ironBot', JSON.stringify(ironBot));
+	localStorage.setItem('copper', JSON.stringify(copper));
+	localStorage.setItem('copperMine', JSON.stringify(copperMine));
+	localStorage.setItem('copperBot', JSON.stringify(copperBot));
+	localStorage.setItem('oil', JSON.stringify(oil));
+	localStorage.setItem('oilMine', JSON.stringify(oilMine));
+	localStorage.setItem('oilBot', JSON.stringify(oilBot));
+  }
+  
+  function load() {
+	stone = JSON.parse(localStorage.getItem('stone'));
+	stoneMine = JSON.parse(localStorage.getItem('stoneMine'));
+	stoneBot = JSON.parse(localStorage.getItem('stoneBot'));
+	wood = JSON.parse(localStorage.getItem('wood'));
+	woodMine = JSON.parse(localStorage.getItem('woodMine'));
+	woodBot = JSON.parse(localStorage.getItem('woodBot'));
+	iron = JSON.parse(localStorage.getItem('iron'));
+	ironMine = JSON.parse(localStorage.getItem('ironMine'));
+	ironBot = JSON.parse(localStorage.getItem('ironBot'));
+	copper = JSON.parse(localStorage.getItem('copper'));
+	copperMine = JSON.parse(localStorage.getItem('copperMine'));
+	copperBot = JSON.parse(localStorage.getItem('copperBot'));
+	oil = JSON.parse(localStorage.getItem('oil'));
+	oilMine = JSON.parse(localStorage.getItem('oilMine'));
+	oilBot = JSON.parse(localStorage.getItem('oilBot'));
+  }
+  
 function stoneClick(number) {
 	stone = stone + number;
 	document.getElementById("stone").innerHTML = stone;
